@@ -2,6 +2,7 @@ package utilities.menu;
 
 import utilities.errors.Errors;
 
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Menu<T> {
@@ -25,7 +26,7 @@ public class Menu<T> {
         if(options.length == 0) return null;
 
         // One based index (starts at 1 for user-friendly reasons)
-        int selected = 0;
+        MenuOption<T> selected = null;
 
         do {
             final var scanner = new Scanner(System.in);
@@ -33,18 +34,24 @@ public class Menu<T> {
                 System.out.println("\n---[ " + title + " ]---");
                 for (int i = 0; i < options.length; i++) options[i].display(i);
                 System.out.print("\n" + question + ": ");
-                selected = scanner.nextInt();
+                int selectedIndex = scanner.nextInt();
                 System.out.println();
-                if(selected <= 0 || selected > options.length) {
-                    selected = 0;
+                if(selectedIndex <= 0 || selectedIndex > options.length) {
                     Errors.logError("Please, provide a valid number between 1 and " + options.length + ".");
+                    continue;
+                }
+
+                selected = options[selectedIndex];
+
+                if(!selected.isAvailable()) {
+                    Errors.logError("This option is not available, please, select another one.");
                 }
             } catch (Exception ignored) {
                 Errors.logError("Please, provide a valid number.");
             }
-        } while(selected == 0);
+        } while(Objects.requireNonNull(selected).isAvailable());
 
         // Converts the selected value into a 0 based index value (starts at 0)
-        return options[selected - 1].getValue();
+        return selected.getValue();
     }
 }

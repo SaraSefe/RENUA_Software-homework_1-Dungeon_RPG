@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d48b89a5-786e-4034-a1b6-61b9a018011d" name="Changes" comment="Display options">
+    <list default="true" id="d48b89a5-786e-4034-a1b6-61b9a018011d" name="Changes" comment="Consider disabled options">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utilities/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/menu/Menu.java" afterDir="false" />
@@ -78,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656445864957</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Display options">
+      <created>1656446373465</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656446373465</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -96,6 +103,7 @@
     <MESSAGE value="workspace.xml" />
     <MESSAGE value="Menu object" />
     <MESSAGE value="Display options" />
-    <option name="LAST_COMMIT_MESSAGE" value="Display options" />
+    <MESSAGE value="Consider disabled options" />
+    <option name="LAST_COMMIT_MESSAGE" value="Consider disabled options" />
   </component>
 </project>

@@ -44,6 +44,13 @@ public class MenuOption<T> {
     }
 
     public void display(int index) {
-        System.out.println("(" + (index + 1) + ") " + getDisplay());
+        System.out.println("(" + (index + 1) + ") " + getDisplay() + (isAvailable() ? "" : " [DISABLED]"));
+    }
+
+    public static <T> MenuOption<T> create(String display, T value) {
+        return new MenuOption<T>(display, value);
+    }
+    public static <T> MenuOption<T> create(String display, T value, boolean available) {
+        return new MenuOption<T>(display, value, available);
     }
 }
