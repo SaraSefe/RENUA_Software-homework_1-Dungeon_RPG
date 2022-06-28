@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d48b89a5-786e-4034-a1b6-61b9a018011d" name="Changes" comment="Consider disabled options">
+    <list default="true" id="d48b89a5-786e-4034-a1b6-61b9a018011d" name="Changes" comment="Fix: now you cannot select disabled options">
+      <change afterPath="$PROJECT_DIR$/src/utilities/menu/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/menu/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/menu/MenuOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/menu/MenuOption.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +37,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RunManager">
@@ -92,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656447117329</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fix: now you cannot select disabled options">
+      <created>1656447397199</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1656447397199</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,6 +118,7 @@
     <MESSAGE value="Menu object" />
     <MESSAGE value="Display options" />
     <MESSAGE value="Consider disabled options" />
-    <option name="LAST_COMMIT_MESSAGE" value="Consider disabled options" />
+    <MESSAGE value="Fix: now you cannot select disabled options" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix: now you cannot select disabled options" />
   </component>
 </project>
