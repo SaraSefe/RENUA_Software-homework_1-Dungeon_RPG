@@ -42,4 +42,8 @@ public class MenuOption<T> {
     public void setAvailable(boolean available) {
         this.available = available;
     }
+
+    public void display(int index) {
+        System.out.println("(" + (index + 1) + ") " + getDisplay());
+    }
 }

@@ -24,15 +24,17 @@ public class Menu<T> {
         // If there are no options null is returned
         if(options.length == 0) return null;
 
-        final var scanner = new Scanner(System.in);
         // One based index (starts at 1 for user-friendly reasons)
         int selected = 0;
 
-        System.out.println("---[ " + title + " ]---");
         do {
+            final var scanner = new Scanner(System.in);
             try {
+                System.out.println("\n---[ " + title + " ]---");
+                for (int i = 0; i < options.length; i++) options[i].display(i);
                 System.out.print("\n" + question + ": ");
                 selected = scanner.nextInt();
+                System.out.println();
                 if(selected <= 0 || selected > options.length) {
                     selected = 0;
                     Errors.logError("Please, provide a valid number between 1 and " + options.length + ".");
