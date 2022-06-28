@@ -17,6 +17,7 @@ public class MenuOption<T> {
     public MenuOption(String display, T value, boolean available) {
         this.display = display;
         this.value = value;
+        this.available = available;
     }
 
     public String getDisplay() {

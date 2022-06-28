@@ -41,15 +41,16 @@ public class Menu<T> {
                     continue;
                 }
 
-                selected = options[selectedIndex];
+                selected = options[selectedIndex - 1];
 
                 if(!selected.isAvailable()) {
                     Errors.logError("This option is not available, please, select another one.");
+                    selected = null;
                 }
             } catch (Exception ignored) {
                 Errors.logError("Please, provide a valid number.");
             }
-        } while(Objects.requireNonNull(selected).isAvailable());
+        } while(selected == null);
 
         // Converts the selected value into a 0 based index value (starts at 0)
         return selected.getValue();
