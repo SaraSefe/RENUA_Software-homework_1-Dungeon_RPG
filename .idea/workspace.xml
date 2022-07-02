@@ -21,10 +21,13 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2BDW2xJYMOSTrVIpbCRJeLUj9J4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -32,7 +35,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
+<component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -63,6 +66,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1656440934368</updated>
+      <workItem from="1656443127257" duration="1410000" />
+      <workItem from="1656537392921" duration="269000" />
+      <workItem from="1656537715121" duration="1586000" />
+      <workItem from="1656539342892" duration="60000" />
+      <workItem from="1656539421546" duration="59000" />
+      <workItem from="1656539634419" duration="799000" />
+      <workItem from="1656540521768" duration="642000" />
+    </task>
+    <task id="LOCAL-00001" summary="Sara from UML to structure">
+      <created>1656540972887</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656540972887</updated>
     </task>
     <task id="LOCAL-00001" summary="workspace.xml">
       <created>1656444649873</created>
