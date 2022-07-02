@@ -43,6 +43,11 @@ abstract class Character implements Attacker {
         isAlive = alive;
     }
 
+    public void doDamage(int damage) {
+        // Must check if it is dead
+
+        this.setHP(this.getHP() - damage);
+    }
 
     public String toString() {
         return super.toString();
