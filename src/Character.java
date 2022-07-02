@@ -1,4 +1,4 @@
-abstract class Character {
+abstract class Character implements Attacker {
     private int id;
     private String name;
     private int HP;
@@ -47,4 +47,7 @@ abstract class Character {
     public String toString() {
         return super.toString();
     }
+
+    public abstract void attack(Character character);
 }
+

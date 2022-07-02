@@ -1,12 +1,10 @@
-public class Warrior extends Character{
+public class Warrior extends Character {
     int stamina;
-    int attack;
     int strength;
 
     public Warrior(int id, String name, int HP, boolean isAlive, int stamina, int attack, int strength) {
         super(id, name, HP, isAlive);
         this.stamina = stamina;
-        this.attack = attack;
         this.strength = strength;
     }
 
@@ -22,14 +20,6 @@ public class Warrior extends Character{
         this.stamina = stamina;
     }
 
-    public int getAttack() {
-        return attack;
-    }
-
-    public void setAttack(int attack) {
-        this.attack = attack;
-    }
-
     public int getStrength() {
         return strength;
     }
@@ -42,8 +32,26 @@ public class Warrior extends Character{
     public String toString() {
         return "Warrior{" +
                 "stamina=" + stamina +
-                ", attack=" + attack +
                 ", strength=" + strength +
                 '}';
+    }
+
+    @Override
+    public void attack(Character character) {
+        if (stamina >= 5) {
+            strongAttack(character);
+        } else {
+            weakAttack(character);
+        }
+    }
+
+    private void strongAttack(Character character) {
+        character.setHP(character.getHP() - this.strength);
+        setStamina(getStamina() - 5);
+    }
+
+    private void weakAttack(Character character) {
+        character.setHP(character.getHP() - (int)Math.floor(this.strength / 2.0));
+        setStamina(getStamina() + 1);
     }
 }
