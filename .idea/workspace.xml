@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d48b89a5-786e-4034-a1b6-61b9a018011d" name="Changes" comment="Fix: now you cannot select disabled options">
-      <change afterPath="$PROJECT_DIR$/src/utilities/menu/README.md" afterDir="false" />
+    <list default="true" id="d48b89a5-786e-4034-a1b6-61b9a018011d" name="Changes" comment="Wizard can attack">
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_6_2022_20_30_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_6_2022_20_30__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Attacker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Attacker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Warrior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Wizard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/errors/Errors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/errors/Errors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/menu/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/menu/MenuOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/menu/MenuOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/menu/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/menu/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,15 +49,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-<component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -66,20 +81,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1656440934368</updated>
-      <workItem from="1656443127257" duration="1410000" />
-      <workItem from="1656537392921" duration="269000" />
-      <workItem from="1656537715121" duration="1586000" />
-      <workItem from="1656539342892" duration="60000" />
-      <workItem from="1656539421546" duration="59000" />
-      <workItem from="1656539634419" duration="799000" />
-      <workItem from="1656540521768" duration="642000" />
-    </task>
-    <task id="LOCAL-00001" summary="Sara from UML to structure">
-      <created>1656540972887</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1656540972887</updated>
+      <workItem from="1657037641513" duration="87000" />
+      <workItem from="1657218889819" duration="335000" />
     </task>
     <task id="LOCAL-00001" summary="workspace.xml">
       <created>1656444649873</created>
@@ -116,8 +119,25 @@
       <option name="project" value="LOCAL" />
       <updated>1656447397199</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Edit ignore">
+      <created>1656772353892</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1656772353892</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Wizard can attack">
+      <created>1656774909363</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1656774909363</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -136,6 +156,12 @@
     <MESSAGE value="Display options" />
     <MESSAGE value="Consider disabled options" />
     <MESSAGE value="Fix: now you cannot select disabled options" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix: now you cannot select disabled options" />
+    <MESSAGE value="Edit ignore" />
+    <MESSAGE value="Wizard can attack" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wizard can attack" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
