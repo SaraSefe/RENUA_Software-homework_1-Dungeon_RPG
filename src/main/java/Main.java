@@ -1,12 +1,24 @@
+import utilities.menu.Menu;
+import utilities.menu.MenuOption;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 public class Main {
+
+    enum MainMenuOptions {
+        opt1 // MUST CHANGE, DO NOT KEEP THIS NAME. IT IS AN EXAMPLE
+    }
+
     public static void main(String[] args) {
 
         //Requirement 1
-        //TODO create menu
+        var mainMenu = new Menu<MainMenuOptions>(new MenuOption[] {
+            MenuOption.create("Opt 1", MainMenuOptions.opt1)
+        }, "Main menu", "Choose an option:");
+
+        var selected = mainMenu.display();
 
         //Requirement 2
         List<Warrior> warriorsParty = new ArrayList<>();
