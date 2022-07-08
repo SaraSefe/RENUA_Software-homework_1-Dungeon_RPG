@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d48b89a5-786e-4034-a1b6-61b9a018011d" name="Changes" comment="Wizard can attack">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_6_2022_20_30_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_6_2022_20_30__Changes_.xml" beforeDir="false" />
+    <list default="true" id="d48b89a5-786e-4034-a1b6-61b9a018011d" name="Changes" comment="Switch to maven">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_7_2022_16_29__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_7_2022_16_29__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attacker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Attacker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Warrior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Wizard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/errors/Errors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/errors/Errors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/menu/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/menu/MenuOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/menu/MenuOption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/menu/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/menu/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics-of-Java-homework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Basics-of-Java-homework.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +32,13 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2BDW2xJYMOSTrVIpbCRJeLUj9J4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -83,6 +80,7 @@
       <updated>1656440934368</updated>
       <workItem from="1657037641513" duration="87000" />
       <workItem from="1657218889819" duration="335000" />
+      <workItem from="1657290292733" duration="176000" />
     </task>
     <task id="LOCAL-00001" summary="workspace.xml">
       <created>1656444649873</created>

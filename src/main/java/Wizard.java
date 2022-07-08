@@ -1,23 +1,23 @@
 import utilities.menu.Menu;
 import utilities.menu.MenuOption;
 
+import java.util.Random;
+
 public class Wizard extends Character{
 
-    enum Attacks {
-        Fireball,
-        StaffHit
-    };
+    final static int MIN_HP = 50;
+    final static int MAX_HP = 100;
+    final static int MIN_MANA = 10;
+    final static int MAX_MANA = 50;
+    final static int MIN_INTELLIGENCE = 1;
+    final static int MAX_INTELLIGENCE = 50;
+
     private int mana;
     private int intelligence;
-    public Wizard(int id, String name, int HP, boolean isAlive) {
-        super(id, name, HP, isAlive);
-
-    }
-
-    public Wizard(int id, String name, int HP, boolean isAlive, int mana, int intelligence) {
-        super(id, name, HP, isAlive);
-        this.mana = mana;
-        this.intelligence = intelligence;
+    public Wizard(int id, String name, boolean isAlive) {
+        super(id, name, new Random().nextInt(MIN_HP, MAX_HP), isAlive);
+        setMana(new Random().nextInt(MIN_MANA, MAX_MANA));
+        setIntelligence(new Random().nextInt(MIN_INTELLIGENCE, MAX_INTELLIGENCE));
     }
 
     public int getMana() {
@@ -72,6 +72,7 @@ public class Wizard extends Character{
         return "Wizard{" +
                 "mana=" + mana +
                 ", intelligence=" + intelligence +
+                ", hp=" + hp +
                 '}';
     }
 }

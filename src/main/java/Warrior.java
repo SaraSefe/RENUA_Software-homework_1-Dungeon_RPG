@@ -1,11 +1,20 @@
+import java.util.Random;
+
 public class Warrior extends Character {
+
+    final static int MIN_HP_WARRIOR = 100;
+    final static int MAX_HP_WARRIOR = 200;
+    final static int MIN_STAMINA = 10;
+    final static int MAX_STAMINA = 50;
+    final static int MIN_STRENGTH = 1;
+    final static int MAX_STRENGTH = 10;
     int stamina;
     int strength;
 
-    public Warrior(int id, String name, int HP, boolean isAlive, int stamina, int attack, int strength) {
-        super(id, name, HP, isAlive);
-        this.stamina = stamina;
-        this.strength = strength;
+    public Warrior(int id, String name, boolean isAlive) {
+        super(id, name, new Random().nextInt(MIN_HP_WARRIOR, MAX_HP_WARRIOR), isAlive);
+        setStamina(new Random().nextInt(MIN_STAMINA, MAX_STAMINA));
+        setStrength(new Random().nextInt(MIN_STRENGTH, MAX_STRENGTH));
     }
 
     public Warrior(int id, String name, int HP, boolean isAlive) {
@@ -33,6 +42,7 @@ public class Warrior extends Character {
         return "Warrior{" +
                 "stamina=" + stamina +
                 ", strength=" + strength +
+                ", hp=" + hp +
                 '}';
     }
 
@@ -46,12 +56,12 @@ public class Warrior extends Character {
     }
 
     private void strongAttack(Character character) {
-        character.setHP(character.getHP() - this.strength);
+        character.setHp(character.getHp() - this.strength);
         setStamina(getStamina() - 5);
     }
 
     private void weakAttack(Character character) {
-        character.setHP(character.getHP() - (int)Math.floor(this.strength / 2.0));
+        character.setHp(character.getHp() - (int)Math.floor(this.strength / 2.0));
         setStamina(getStamina() + 1);
     }
 }
