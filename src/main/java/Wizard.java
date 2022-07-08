@@ -1,6 +1,3 @@
-import utilities.menu.Menu;
-import utilities.menu.MenuOption;
-
 import java.util.Random;
 
 public class Wizard extends Character{
@@ -14,8 +11,14 @@ public class Wizard extends Character{
 
     private int mana;
     private int intelligence;
-    public Wizard(int id, String name, boolean isAlive) {
-        super(id, name, new Random().nextInt(MIN_HP, MAX_HP), isAlive);
+    public Wizard(String id, String name) {
+        super(id, name, new Random().nextInt(MIN_HP, MAX_HP));
+        setMana(new Random().nextInt(MIN_MANA, MAX_MANA));
+        setIntelligence(new Random().nextInt(MIN_INTELLIGENCE, MAX_INTELLIGENCE));
+    }
+
+    public Wizard() {
+        super(new Random().nextInt(MIN_HP, MAX_HP));
         setMana(new Random().nextInt(MIN_MANA, MAX_MANA));
         setIntelligence(new Random().nextInt(MIN_INTELLIGENCE, MAX_INTELLIGENCE));
     }
@@ -70,7 +73,9 @@ public class Wizard extends Character{
 
     public String toString() {
         return "Wizard{" +
-                "mana=" + mana +
+                "id=" + super.getId() +
+                ", name='" + super.getName() + "'" +
+                ", mana=" + mana +
                 ", intelligence=" + intelligence +
                 ", hp=" + hp +
                 '}';

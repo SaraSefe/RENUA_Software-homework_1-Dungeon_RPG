@@ -11,14 +11,16 @@ public class Warrior extends Character {
     int stamina;
     int strength;
 
-    public Warrior(int id, String name, boolean isAlive) {
-        super(id, name, new Random().nextInt(MIN_HP_WARRIOR, MAX_HP_WARRIOR), isAlive);
+    public Warrior(String id, String name) {
+        super(id, name, new Random().nextInt(MIN_HP_WARRIOR, MAX_HP_WARRIOR));
         setStamina(new Random().nextInt(MIN_STAMINA, MAX_STAMINA));
         setStrength(new Random().nextInt(MIN_STRENGTH, MAX_STRENGTH));
     }
 
-    public Warrior(int id, String name, int HP, boolean isAlive) {
-        super(id, name, HP, isAlive);
+    public Warrior() {
+        super(new Random().nextInt(MIN_HP_WARRIOR, MAX_HP_WARRIOR));
+        setStamina(new Random().nextInt(MIN_STAMINA, MAX_STAMINA));
+        setStrength(new Random().nextInt(MIN_STRENGTH, MAX_STRENGTH));
     }
 
     public int getStamina() {
@@ -40,7 +42,9 @@ public class Warrior extends Character {
    
     public String toString() {
         return "Warrior{" +
-                "stamina=" + stamina +
+                "id=" + super.getId() +
+                ", name='" + super.getName() + "'" +
+                ", stamina=" + stamina +
                 ", strength=" + strength +
                 ", hp=" + hp +
                 '}';
