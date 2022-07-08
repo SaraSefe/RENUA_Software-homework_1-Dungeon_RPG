@@ -1,25 +1,30 @@
+import utilities.Keyboard.ReadFromKeyboard;
 import utilities.menu.Menu;
 import utilities.menu.MenuOption;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
-
-    enum MainMenuOptions {
-        opt1 // MUST CHANGE, DO NOT KEEP THIS NAME. IT IS AN EXAMPLE
-    }
 
     public static void main(String[] args) {
 
         //Requirement 1
-        var mainMenu = new Menu<MainMenuOptions>(new MenuOption[] {
-            MenuOption.create("Opt 1", MainMenuOptions.opt1)
+        var mainMenu = new Menu<Runnable>(new MenuOption[] {
+            MenuOption.create("Crear Warriors y Wizards", (Runnable) () -> {
+                //System.out.println("Selecciona el número de Warriors Y Wizards que desea:");
+                int num = ReadFromKeyboard.readKeyboard();
+                createWarriorsAndWizards(num);
+            }),
+            //MenuOption.create("Execute round", )
         }, "Main menu", "Choose an option:");
 
         var selected = mainMenu.display();
 
+        selected.run();
+        /*
         //Requirement 2
         List<Warrior> warriorsParty = new ArrayList<>();
         List<Wizard> wizardsParty = new ArrayList<>();
@@ -48,6 +53,10 @@ public class Main {
             System.out.println("warrior 1: " + counter + " " + warrior1);
             System.out.println("wizard  1: " + wizard1);
         }
+*/
+    }
+
+    public static void createWarriorsAndWizards(int num) {
 
     }
 }
