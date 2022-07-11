@@ -13,13 +13,13 @@ public class Main {
 
         //Requirement 1
         var mainMenu = new Menu<Runnable>(new MenuOption[] {
-            MenuOption.create("Crear Warriors y Wizards", (Runnable) () -> {
-                //System.out.println("Selecciona el número de Warriors Y Wizards que desea:");
+            MenuOption.create("Create Wizards and Warriors", (Runnable) () -> {
+                System.out.println("How many Wizards and Warriors do you want to create?");
                 int num = ReadFromKeyboard.readKeyboard();
                 createWarriorsAndWizards(num);
             }),
             //MenuOption.create("Execute round", )
-        }, "Main menu", "Choose an option:");
+        }, "Main menu", "Choose an option");
 
         var selected = mainMenu.display();
 
@@ -57,6 +57,11 @@ public class Main {
     }
 
     public static void createWarriorsAndWizards(int num) {
-
+        var count = 0;
+        while (count < num) {
+            System.out.println(new Warrior());
+            System.out.println(new Wizard());
+            count++;
+        }
     }
 }
